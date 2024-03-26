@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.write("## Hypothesis and Validation")
+st.write("## ML Model")
 
 st.info(
     f"Test1"
