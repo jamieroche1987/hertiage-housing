@@ -7,12 +7,9 @@ from src.data_management import (
     load_property_data,
     load_pkl_file,
     load_inherited_data)
-
 ## Streamlit warning appears despite using the st.cache_resource command, warning not supressed
-
 def page_sales_predictor():
     st.write("#### 💰 Sales Predictor")
-
     # load the price predictor files
     version = "v1"
     sale_price_prediction = load_pkl_file(
@@ -21,7 +18,6 @@ def page_sales_predictor():
     sale_price_vars =(
         pd.read_csv(f"outputs/ml_pipeline/sale_price_prediction/{version}/X_train.csv")
     )
-
     # load inherited property data 
     df = load_inherited_data()
     st.write("### Heritage Housing")
@@ -59,16 +55,20 @@ def page_sales_predictor():
             f"* The total predicted price of all four\n"
             f"inherited properties comes to:\n"
             f"&nbsp;$ {sum}")
+
     st.write("---")
+
+    st.write("#### Predict Property Price")
+
     st.info(
-        f"The client is also interested in prices of properties\n"
-        f"around the Ames area.\n"
-        f"We will use the best features to predict the price.\n"
-        f"**This requirement has been met.**"
+    f"The client is also interested in prices of properties\n"
+    f"around the Ames area.\n"
+    f"We will use the best features to predict the price.\n"
+    f"**This requirement has been met.**"
     )
-    st.write("#### Heritage Housing")
     # generate the live data
     X_live = DrawInputsWidgets()
+
     # run prediction on properties
     if st.button("Run Prediction"):
         price_prediction = sale_price_prediction.predict(
