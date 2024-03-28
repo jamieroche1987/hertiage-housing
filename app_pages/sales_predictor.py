@@ -8,8 +8,8 @@ from src.data_management import (
     load_pkl_file,
     load_inherited_data)
 
-## Streamlit warning appears despite using the st.cache command,
-## downgraded versions to upload project within slug size.
+## Streamlit warning appears unable to use command,
+# downgraded versions to upload project within slug size.
 
 def page_sales_predictor():
     st.write("#### 💰 Sales Predictor")
@@ -59,9 +59,7 @@ def page_sales_predictor():
             f"inherited properties comes to:\n"
             f"&nbsp;$ {sum}")
     st.write("---")
-
     st.write("#### Predict Property Price")
-
     st.info(
     f"The client is also interested in prices of properties\n"
     f"around the Ames area.\n"
@@ -78,7 +76,7 @@ def page_sales_predictor():
             f"* The predicted property price is: &nbsp;${price_prediction[0]}  \n"
         )
 
-@st.cache
+
 def DrawInputsWidgets():
 
     # load dataset
