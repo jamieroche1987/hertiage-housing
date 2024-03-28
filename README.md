@@ -81,6 +81,36 @@ The app was created to help the client:
 * There is a lot of attributes that may have a large degree of inter-correlation. The best variables will need to be determined in order to properly proceed with the dataset, and use transformers where necessary.
 
 ### Possible Limitations
-* The data lacks features that represent the location of the property, e.g. close to a school, which could have an imopact on sale price.
+* The data lacks features that represent the location of the property, e.g. close to a school, which could have an impact on sale price.
 
 Although a ML model can be created, it may not be adequate at predicting propery prices within *Ames* without these extra variables that can influence sale price; with these features the performance would, in theory be higher.
+
+## Business Requirements
+You have been requested by your friend, who has received an inheritance from a deceased great-grandfather located in Ames, Iowa, to  help in maximising the sales price for the inherited properties.
+
+Although your friend has an excellent understanding of property prices in her own state and residential area, she fears that basing her estimates for property worth on her current knowledge might lead to inaccurate appraisals. What makes a house desirable and valuable where she comes from might not be the same in Ames, Iowa. She found a public dataset with house prices for Ames, Iowa, and will provide you with that.
+
+* 1 - The client is interested in discovering how the house attributes correlate with the sale price. Therefore, the client expects data visualisations of the correlated variables against the sale price to show that.
+* 2 - The client is interested in predicting the house sale price from her four inherited houses and any other house in Ames, Iowa.
+
+
+## Hypothesis and Validation
+
+### Hypothesis One
+
+* It is suspected that the *size* of a property will have an impact on *sale price*, meaning that the larger a propery is overall, the more it will sell for:
+    * To validate this, we will do an correlation study, as well assess the best features against sales price.
+        * **This hypothesis was confirmed during the correlation study, as well as during assessing the best features**
+
+### Hypothesis Two
+
+* It is suspected that the higher the *quality/finish* of a property will have an impact on *sale price*, meaning that the higher quality homes will overall sell for higher:
+    * To validate this, we will do an correlation study, as well assess the best features against sales price.
+        * **This hypothesis was confirmed during the correlation study, as well as during assessing the best features**
+
+### Hypothesis Three
+
+* It is suspected that the *year* of a property will have an impact on *sale price*, meaning that the newly built properties are more likely to sell for more:
+    * To validate this, we will do an correlation study, as well assess the best features against sales price.
+        * **This hypothesis was confirmed during the correlation study, as well as during assessing the best features**
+
