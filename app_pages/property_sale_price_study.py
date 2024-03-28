@@ -14,6 +14,7 @@ def page_sale_price_study():
     vars_to_study = ['OverallQual','TotalBsmtSF','1stFlrSF',
                     'YearBuilt', 'GarageArea','GrLivArea']
 
+
     st.info(
         f"**House Price Study**\n\n"
         f"*Business Requirement 1*:\n"
@@ -24,14 +25,16 @@ def page_sale_price_study():
         f"**This business requirement were satisfied and met.**"
     )
     if st.checkbox("Inspect Property Attributes"):
-        
-        
+
         st.write(
             f"* The dataset has {df.shape[0]} rows and {df.shape[1]} columns,\n"
-            f"see below for the first 25 rows.\n\n"
+            f"see below for the first 15 rows.\n\n"
+            f"Scroll across to view all rows\n\n"
             f"*Note: All NaN variables have been cleaned*")
-        st.write(df.head(25))
+        st.write(df.head(15))
+
     st.write("---")
+
     st.info(
         f"As per the clients request, a correlatiom study was\n"
         f"performed to better understand how the attributes\n"
@@ -44,7 +47,7 @@ def page_sale_price_study():
     df_eda = df.filter(vars_to_study + ['SalePrice'])
     if st.checkbox("Sale Price Study Visulations"):
         sale_price_per_var(df_eda, vars_to_study)
-
+        
         # copied from sale price study notebook
         st.write(
             f"Findings:\n"
@@ -62,7 +65,13 @@ def page_sale_price_study():
 def sale_price_per_var(df_eda, vars_to_study):
     # function based on sale price study notebook
     target_var = 'SalePrice'
-	@@ -68,4 +80,4 @@ def plot_numerical(df, col, target_var):
+    for col in vars_to_study:
+        plot_numerical(df_eda, col, target_var)
+        st.write("\n\n")
+# cache decoder
+@st.cache_data 
+def plot_numerical(df, col, target_var):
+    # function based on sale price study notebook
     fig, axes = plt.subplots(figsize=(15, 8))
     sns.regplot(data=df, x=col, y=target_var)
     plt.title(f"{col}", fontsize=20)
