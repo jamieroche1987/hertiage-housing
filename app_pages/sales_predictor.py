@@ -7,7 +7,10 @@ from src.data_management import (
     load_property_data,
     load_pkl_file,
     load_inherited_data)
-## Streamlit warning appears despite using the st.cache_resource command, warning not supressed
+
+## Streamlit warning appears despite using the st.cache command,
+## downgraded versions to upload project within slug size.
+
 def page_sales_predictor():
     st.write("#### 💰 Sales Predictor")
     # load the price predictor files
@@ -55,7 +58,6 @@ def page_sales_predictor():
             f"* The total predicted price of all four\n"
             f"inherited properties comes to:\n"
             f"&nbsp;$ {sum}")
-
     st.write("---")
 
     st.write("#### Predict Property Price")
@@ -68,7 +70,6 @@ def page_sales_predictor():
     )
     # generate the live data
     X_live = DrawInputsWidgets()
-
     # run prediction on properties
     if st.button("Run Prediction"):
         price_prediction = sale_price_prediction.predict(
@@ -76,8 +77,10 @@ def page_sales_predictor():
         st.write(
             f"* The predicted property price is: &nbsp;${price_prediction[0]}  \n"
         )
-@st.cache_data(experimental_allow_widgets=True)
+
+@st.cache
 def DrawInputsWidgets():
+
     # load dataset
     df = load_property_data()
     percentageMin, percentageMax = 0.4, 2.0
