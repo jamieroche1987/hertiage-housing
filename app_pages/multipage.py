@@ -6,7 +6,7 @@ class MultiPage:  # Class to generate multiple Streamlit pages
         self.app_name = app_name
 
         st.set_page_config(
-            page_title="Heritage Housing",
+            page_title="Property Price Predictor",
             page_icon="🏘️"
         )
 
@@ -18,5 +18,5 @@ class MultiPage:  # Class to generate multiple Streamlit pages
         page = st.sidebar.radio(
             'Menu', self.pages, format_func=lambda page: page['title'])
         page['function']()
-
+        
         st.sidebar.write("Select page above to view")

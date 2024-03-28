@@ -9,7 +9,7 @@ from src.evaluate import (
     regression_evaluation)
 
 def page_ml_model():
-
+    
     st.write("#### 🤖 ML Model")
 
     #load files

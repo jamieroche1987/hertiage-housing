@@ -2,15 +2,15 @@ import streamlit as st
 import pandas as pd
 
 def page_project_summary():
-
+    
     st.write("#### 📝 Project Summary")
 
     # background information taken from readme
     st.info(
         f"**Background information:**\n\n"
-        f"As a good friend, you are requested by your friend, who has received\n"
+        f"You have been requested by your friend, who has received\n"
         f"an inheritance from a deceased great-grandfather located in\n"
-        f"Ames,Iowa, to help in maximising the sales price for\n"
+        f"Ames, Iowa, to help in maximising the sales price for\n"
         f"the inherited properties.\n\n"
         f"Although your friend has an excellent understanding of property prices\n"
         f"in her own state and residential area, she fears that basing her\n"
@@ -36,12 +36,13 @@ def page_project_summary():
 
     # checkbox to view dataset
     if st.checkbox("View Dataset"):
+        st.write(f"**Expand to view whole dataset.**")
         df = pd.DataFrame(
         [
         {"Variable": "1stFlrSF", 
         "Meaning": "First Floor square feet", 
         "Units": "334-4692"},
-
+        
         {"Variable": "2ndFlrSF", 
         "Meaning": "Second-Floor square feet", 
         "Units": "0-2065"},
@@ -134,8 +135,6 @@ def page_project_summary():
         "Meaning": "Sale Price", 
         "Units": "34900-755000"},
     ])
-
-        # this hides the index and allows the table column width to be expanded and decreased
         df = st.data_editor(df, hide_index=True, use_container_width=True)
 
     # link to readme
@@ -147,7 +146,7 @@ def page_project_summary():
 
     # business requirements taken from readme
     st.success(
-        f"The project contains 2 **Business Requirements**:\n"
+        f"The project contains ** 2 Business Requirements**:\n"
         f"* 1 - The client is interested in discovering how the house attributes\n"
         f"correlate with the sale price.\n"
         f"Therefore, the client expects data visualisations of\n"
