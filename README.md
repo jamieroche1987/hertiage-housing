@@ -223,6 +223,11 @@ The dashboard will consist of six pages:
     * Section - welcome message and what can be found 
     * Sidebar - access to other pages, avaliable on all pages
 
+<details>
+<summary>Homepage</summary>
+<img src="media/homepage.png" width="60%">
+</details>
+
 2. Project Summary:
     * Section - background information
     * Section - quick summary
@@ -231,14 +236,33 @@ The dashboard will consist of six pages:
     * Link to README
     * Section - business Requirements
 
+<details>
+<summary>Project summary</summary>
+<img src="media/projectsummary1.png" width="60%">
+<img src="media/projectsummary2.png" width="60%">
+</details>
+
 3. Hypothesis and Validation
     * Section - the hypothesis and validation
+
+<details>
+<summary>Hypothesis and Validation</summary>
+<img src="media/hypothesispage.png" width="60%">
+</details>
 
 4. Propery Sale Price Study:
     * Section - sale price study and business requirement 1
     * Widget checkbox - view dataset
     * Section - correlation study variables and findings
     * Widget checkbox - graphs from correlation study
+
+<details>
+<summary>Propery Sale Price Study</summary>
+<img src="media/propertypricesale1.png" width="60%">
+<img src="media/propertypricesale2.png" width="60%">
+<img src="media/propertypricesale3.png" width="60%">
+<img src="media/propertypricesale4.png" width="60%">
+</details>
 
 5. Sales Predictor:
     * Section - business requirement 2
@@ -248,11 +272,27 @@ The dashboard will consist of six pages:
     * Section - predict property price
     * Widgets - allows users to input selected variables to predict price and output
 
+<details>
+<summary>Sales Predictor</summary>
+<img src="media/salepredictor1.png" width="60%">
+<img src="media/salepredictor2.png" width="60%">
+<img src="media/salespredictor3.png" width="60%">
+<img src="media/salespredictor4.png" width="60%">
+</details>
+
 6. ML Model:
     * Section - about the regressor model and R2 score
     * Section - pipeline steps
     * Section - best features and importance
     * Section - model evaluation
+
+<details>
+<summary>ML Model:</summary>
+<img src="media/mlmodel1.png" width="60%">
+<img src="media/mlmodel2.png" width="60%">
+<img src="media/mlmodel3.png" width="60%">
+</details>
+
 
     ## Unfixed Bugs
 
