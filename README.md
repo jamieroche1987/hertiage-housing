@@ -266,3 +266,18 @@ The dashboard will consist of six pages:
 5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App on the top of the page to access your App.
 6. If the slug size is too large then add large files not required for the app to the .slugignore file.
 
+## Technologies
+
+This section contains information on resources and technologies used to complete this project.
+
+### Development and Deployment
+
+- [GitHub](https://github.com/) was used to create the project repository, story project files and record commits.
+- [Gitpod](https://www.gitpod.io/) was used as the development environment.
+- [Jupyter Notebooks](https://jupyter.org/) were used to analyse and engineer the data, and develop and evaluate the model pipeline.
+  - In the terminal type `jupyter notebook --NotebookApp.token='' --NotebookApp.password=''` to start the jupyter server.
+- [Heroku](https://www.heroku.com/) was used to deploy the project.
+- [Kaggle](https://www.kaggle.com/) was used to access the dataset
+- [Streamlit](https://streamlit.io/) was used to develop the online app interface.
+
+
