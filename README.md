@@ -294,7 +294,7 @@ The dashboard will consist of six pages:
 </details>
 
 
-    ## Unfixed Bugs
+## Unfixed Bugs
 
 * One unfixed bug is the *streamlit* warning regarding <code>st.cache is deprecated. Please use one of Streamlit's new caching commands, st.cache_data or st.cache_resource.</code> despite the commands being used, the warning does not disappear.
 
