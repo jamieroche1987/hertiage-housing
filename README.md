@@ -246,3 +246,7 @@ The dashboard will consist of six pages:
     * Section - pipeline steps
     * Section - best features and importance
     * Section - model evaluation
+
+    ## Unfixed Bugs
+    
+* One unfixed bug is the *streamlit* warning regarding <code>st.cache is deprecated. Please use one of Streamlit's new caching commands, st.cache_data or st.cache_resource.</code> despite the commands being used, the warning does not disappear.
