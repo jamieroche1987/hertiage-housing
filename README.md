@@ -5,6 +5,7 @@
 Hertiage Housing is a Machine Learning tool that can help users to predict the sale prices of properties by taking the properties features as inputs. Currently this tool will only predict prices on properties within *Ames, Iowa*.
 
 The app was created to help the client:
+
 * View how the attributes of a property correlate to the sale price.
 * Have the ability to predict sale prices for specific houses, and other properties across Ames.
 
@@ -47,6 +48,7 @@ The app was created to help the client:
 </ul>
 
 ## Dataset Content
+
 * The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/housing-prices-data), provided by the client. 
 * The dataset has almost 1.5 thousand rows and represents housing records from Ames, Iowa, indicating house profile (Floor Area, Basement, Garage, Kitchen, Lot, Porch, Wood Deck, Year Built) and its respective sale price for houses built between 1872 and 2010.
 
@@ -78,19 +80,23 @@ The app was created to help the client:
 |SalePrice|Sale Price|34900 - 755000|
 
 ### Initial Observations
+
 * There is a lot of attributes that may have a large degree of inter-correlation. The best variables will need to be determined in order to properly proceed with the dataset, and use transformers where necessary.
 
 ### Possible Limitations
+
 * The data lacks features that represent the location of the property, e.g. close to a school, which could have an impact on sale price.
 
 Although a ML model can be created, it may not be adequate at predicting propery prices within *Ames* without these extra variables that can influence sale price; with these features the performance would, in theory be higher.
 
 ## Business Requirements
+
 You have been requested by your friend, who has received an inheritance from a deceased great-grandfather located in Ames, Iowa, to  help in maximising the sales price for the inherited properties.
 
 Although your friend has an excellent understanding of property prices in her own state and residential area, she fears that basing her estimates for property worth on her current knowledge might lead to inaccurate appraisals. What makes a house desirable and valuable where she comes from might not be the same in Ames, Iowa. She found a public dataset with house prices for Ames, Iowa, and will provide you with that.
 
 * 1 - The client is interested in discovering how the house attributes correlate with the sale price. Therefore, the client expects data visualisations of the correlated variables against the sale price to show that.
+
 * 2 - The client is interested in predicting the house sale price from her four inherited houses and any other house in Ames, Iowa.
 
 
@@ -99,20 +105,20 @@ Although your friend has an excellent understanding of property prices in her ow
 ### Hypothesis One
 
 * It is suspected that the *size* of a property will have an impact on *sale price*, meaning that the larger a propery is overall, the more it will sell for:
-    * To validate this, we will do an correlation study, as well assess the best features against sales price.
-        * **This hypothesis was confirmed during the correlation study, as well as during assessing the best features**
+* To validate this, we will do an correlation study, as well assess the best features against sales price.
+     * **This hypothesis was confirmed during the correlation study, as well as during assessing the best features**
 
 ### Hypothesis Two
 
 * It is suspected that the higher the *quality/finish* of a property will have an impact on *sale price*, meaning that the higher quality homes will overall sell for higher:
-    * To validate this, we will do an correlation study, as well assess the best features against sales price.
-        * **This hypothesis was confirmed during the correlation study, as well as during assessing the best features**
+* To validate this, we will do an correlation study, as well assess the best features against sales price.
+    * **This hypothesis was confirmed during the correlation study, as well as during assessing the best features**
 
 ### Hypothesis Three
 
 * It is suspected that the *year* of a property will have an impact on *sale price*, meaning that the newly built properties are more likely to sell for more:
-    * To validate this, we will do an correlation study, as well assess the best features against sales price.
-        * **This hypothesis was confirmed during the correlation study, as well as during assessing the best features**
+* To validate this, we will do an correlation study, as well assess the best features against sales price.
+    * **This hypothesis was confirmed during the correlation study, as well as during assessing the best features**
 
 ## Rationale Business Requirement Map
 
@@ -124,3 +130,55 @@ Although your friend has an excellent understanding of property prices in her ow
 * Business Requirement 2 - The client is interested in predicting the house sale price from her four inherited houses and any other house in Ames, Iowa.
     * We want to predict whether sale price will increase based on correlated or best variables.
     * For this we will build a regressor model and analyse the best variables to use.
+
+    ## ML Business Case
+
+### Predict Sales
+
+* **What are the business requirements?**
+
+    * The client is interested in discovering how house attributes correlate with sale prices. Therefore, the client expects data visualizations of the correlated variables against the sale price.
+    * The client is interested in predicting the house sale prices from her 4 inherited houses, and any other house in Ames, Iowa.
+
+* **Is there any business requirement that can be answered with conventional data analysis?**
+
+    * Business requirement 1 can be answered with conventional data analysis to find correlated attributes to sale prices.
+
+* **Does the client need a dashboard or an API endpoint?**
+
+    * The client has requested a Streamlit dashboard
+
+* **What does the client consider as a successful project outcome?**
+
+    * A study that shows the most relevant variables that are correlated to sale price.
+    * A capability to predict the sale price of the 4 inherited properties, as well as other properties within *Ames, Iowa*.
+
+* **Can you break down the project into Epics and User Stories?**
+
+    * Information gathering and data collection.
+    * Data visualization, cleaning, and preparation.
+    * Model training, optimization and validation.
+    * Dashboard planning, designing, and development.
+    * Dashboard deployment and release.*
+
+* **Ethical or Privacy concerns?**
+
+    * No, as the client has found a public dataset.
+
+* **Does the data suggest a particular model?**
+
+    * From the PPS study, the data suggested using a regressor model where the target is sale price.
+
+* **What are the model's inputs and intended outputs?**
+
+    * Input: property attribute information.
+    * Output: predicted sale price.
+
+* **What are the criteria for the performance goal of the predictions?**
+
+    * It was agreed upon with the client that an R2 score of at least 0.75 will be required on both train and test sets.
+
+* **How will the client benefit?**
+
+    * The client will be able to maximise the sales price for the inherited properties.
+    * The client will be able to view the sales price for other properties within the area by inputting the variables.
