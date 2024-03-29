@@ -306,3 +306,31 @@ This section contains information on resources and technologies used to complete
   - Principal Component Analysis and evaluation.
 - [XGBoost](https://xgboost.readthedocs.io/en/stable/) for the XGBoostRegressor algorithm.
 
+## Credits 
+
+### Content 
+
+- CI [Hertitage Housing Template](https://github.com/Code-Institute-Solutions/milestone-project-heritage-housing-issues) used
+
+- The projects steps were dependant on following the Code Institue [Churnometer](https://github.com/Code-Institute-Solutions/churnometer) practice project
+- I relied on the following Code Institue lessons for code as well:
+    * [Feature Engineering: Handle Missing Data](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/1f851533cd6a4dcd8a280fd9f37ef4e2/bb0bf41fb8744b46813c0f52a74b9b11/)
+    * [Feature Engineering: Categorical Encoding](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/1f851533cd6a4dcd8a280fd9f37ef4e2/bb0bf41fb8744b46813c0f52a74b9b11/)
+    * [Feature Engineering: Numerical Transformation](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/1f851533cd6a4dcd8a280fd9f37ef4e2/bb0bf41fb8744b46813c0f52a74b9b11/)
+    * [Feature Engineering: Variable Discritisation](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/1f851533cd6a4dcd8a280fd9f37ef4e2/bb0bf41fb8744b46813c0f52a74b9b11/)
+    * [Feature Engineering: Handle Outlier](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/1f851533cd6a4dcd8a280fd9f37ef4e2/bb0bf41fb8744b46813c0f52a74b9b11/)
+    * [Feature Engineering: Drop Features](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/1f851533cd6a4dcd8a280fd9f37ef4e2/bb0bf41fb8744b46813c0f52a74b9b11/)
+    * [SciKit-Learn: Cross Validation](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/1f851533cd6a4dcd8a280fd9f37ef4e2/f3d518ff775b4545adac7642fa290993/)
+
+- To help analyse the histograms and q-q plots I used the following:
+    * [Q-Q Plots](https://www.ucd.ie/ecomodel/Resources/QQplots_WebVersion.html#:~:text=You%20can%20start%20to%20understand,on%20the%20QQ%2Dplot)
+    * [Histogram](https://www.labxchange.org/library/items/lb:LabXchange:10d3270e:html:1#:~:text=A%20histogram%20shows%20how%20frequently,to%20be%20discrete%20positive%20integers.)
+
+- To create the Streamlit app I used the following video tutorial:
+    * Coding is fun [How to create a Streamlit Multi-page Web App](https://www.youtube.com/watch?v=YClmpnpszq8)
+
+- [App Icons](https://streamlit-emoji-shortcodes-streamlit-app-gwckff.streamlit.app/) were found from the streamlit page.
+
+- To create the dataset table I used the following website:
+    * [st.data_editor](https://docs.streamlit.io/library/api-reference/data/st.data_editor)
+
