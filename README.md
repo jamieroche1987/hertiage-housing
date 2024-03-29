@@ -182,3 +182,28 @@ Although your friend has an excellent understanding of property prices in her ow
 
     * The client will be able to maximise the sales price for the inherited properties.
     * The client will be able to view the sales price for other properties within the area by inputting the variables.
+
+
+### Milestones
+8 milestones were created for this project:
+
+* Epic 1: Information Gathering & Data Collection - *closed*
+* Epic 2: Data Visualisation, Cleaning, & Preparation - *closed*
+* Epic 3: Model Training, Optimisation, & Validation - *closed
+* Epic 4: Dashboard Planning, Designing, & Development - *closed*
+* Epic 5: Dashboard Deployment & Release - *closed*
+* User Stories - *closed*
+* Admin - *closed*
+* Should Have & Could Have Features - *open* (this is not important for the project)
+
+**View [Milestones](https://github.com/jamieroche1987/hertiage-housing/milestones?state=closed)**
+
+### User Stories and Epics
+
+* The user stories and epics have been compied into a project board to make it easier to see what needs to be done, this can be viewed here : [User Stories and Epics](https://github.com/users/jamieroche1987/projects/11/views/1)
+
+### MoSCoW Prioritisation
+
+* The project tasks have been broken down into MoSCoW Prioritisation tasks, this can be found here: [MoSCoW Prioritisation](https://github.com/users/jamieroche1987/projects/12)
+
+* Should and Could have features were not implemented at this time due to time contraints.
