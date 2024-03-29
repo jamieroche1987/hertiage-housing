@@ -26,7 +26,7 @@ def page_sales_predictor():
 
     df = load_inherited_data()
 
-    st.write("### Heritage Housing")
+    st.write("### Property Price Predictor")
     st.success(
         f"*Business Requirement 2:*\n"
         f"* 2 - The client is interested in predicting the house sale price\n"
@@ -109,7 +109,7 @@ def DrawInputsWidgets():
     col5, col6, col7, col8 = st.columns(4)
 
 	# create an empty DataFrame, which will be the live data
-    
+
     X_live = pd.DataFrame([], index=[0])
 	
 	# from here on we draw the widget based on the variable type (numerical or categorical)

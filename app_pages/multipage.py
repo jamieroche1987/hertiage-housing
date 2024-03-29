@@ -6,7 +6,7 @@ class MultiPage:  # Class to generate multiple Streamlit pages
         self.app_name = app_name
 
         st.set_page_config(
-            page_title="Property Price Predictor",
+            page_title="Heritage Housing",
             page_icon="🏘️"
         )
 

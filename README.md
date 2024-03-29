@@ -1,13 +1,11 @@
 # Heritage Housing
 
-### About
+![I am responsive image](media/amiresponsive.png)
 
-Heritage Housing is a Machine Learning tool that can help users to predict the sale prices of properties by taking the properties features as inputs. Currently this tool will only predict prices on properties within *Ames, Iowa*.
+**Live Site:** [Live webpage](https://hertiage-housing-93ba46169074.herokuapp.com/)
 
-The app was created to help the client:
+**Link to Repository:** [Repository](https://github.com/jamieroche1987/hertiage-housing)
 
-* View how the attributes of a property correlate to the sale price.
-* Have the ability to predict sale prices for specific houses, and other properties across Ames.
 
 # Table of Contents
 
@@ -46,6 +44,15 @@ The app was created to help the client:
         <li><a href="#acknowledgments">Ackowledgments</a></li>
     </ul>
 </ul>
+
+### About
+
+Heritage Housing is a Machine Learning tool that can help users to predict the sale prices of properties by taking the properties features as inputs. Currently this tool will only predict prices on properties within *Ames, Iowa*.
+
+The app was created to help the client:
+
+* View how the attributes of a property correlate to the sale price.
+* Have the ability to predict sale prices for specific houses, and other properties across Ames.
 
 ## Dataset Content
 
