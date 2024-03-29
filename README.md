@@ -207,3 +207,42 @@ Although your friend has an excellent understanding of property prices in her ow
 * The project tasks have been broken down into MoSCoW Prioritisation tasks, this can be found here: [MoSCoW Prioritisation](https://github.com/users/jamieroche1987/projects/12)
 
 * Should and Could have features were not implemented at this time due to time contraints.
+
+## Dashboard Design
+
+The dashboard will consist of six pages:
+
+1. Homepage:
+    * Section - welcome message and what can be found 
+    * Sidebar - access to other pages, avaliable on all pages
+
+2. Project Summary:
+    * Section - background information
+    * Section - quick summary
+    * Section - about dataset
+    * Widget checkbox - to view the dataset table, the column sizes can be changed
+    * Link to README
+    * Section - business Requirements
+
+3. Hypothesis and Validation
+    * Section - the hypothesis and validation
+
+4. Propery Sale Price Study:
+    * Section - sale price study and business requirement 1
+    * Widget checkbox - view dataset
+    * Section - correlation study variables and findings
+    * Widget checkbox - graphs from correlation study
+
+5. Sales Predictor:
+    * Section - business requirement 2
+    * Section - inherited property price
+    * Widget checkbox - inherited properties
+    * Widget checkbox - inherited property predicted prices
+    * Section - predict property price
+    * Widgets - allows users to input selected variables to predict price and output
+
+6. ML Model:
+    * Section - about the regressor model and R2 score
+    * Section - pipeline steps
+    * Section - best features and importance
+    * Section - model evaluation
