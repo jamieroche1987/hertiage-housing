@@ -28,10 +28,10 @@ The app was created to help the client:
 <li><a href="#dashboard-design">Dashboard Design</a></li>
     <ul>
         <li><a href="#project-summary">Project Summary</a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
+        <li><a href="#hypothesis-and-validation">Hypothesis and Validation</a></li>
+        <li><a href="#property-sale-price-study">Property Sale Price Study</a></li>
+        <li><a href="#predict-sales">Predict Sales</a></li>
+        <li><a href="#ml-model">ML Model</a></li>
     </ul>
 <li><a href="#unfixed-bugs">Unfixed Bugs</a></li>
 <li><a href="#deployment">Deployment</a></li>
@@ -114,3 +114,13 @@ Although your friend has an excellent understanding of property prices in her ow
     * To validate this, we will do an correlation study, as well assess the best features against sales price.
         * **This hypothesis was confirmed during the correlation study, as well as during assessing the best features**
 
+## Rationale Business Requirement Map
+
+* Business Requirement 1 - The client is interested in discovering how the house attributes correlate with the sale price. Therefore, the client expects data visualisations of the correlated variables against the sale price to show that.
+    * We will perform data visualisation and a correlation study to answer this.
+    * The correlation study (using pearson and spearman) will help us better understand how the variables are correlated to Sale price.
+    * We will also plot the main variables against Sale price to visualise the insights.
+
+* Business Requirement 2 - The client is interested in predicting the house sale price from her four inherited houses and any other house in Ames, Iowa.
+    * We want to predict whether sale price will increase based on correlated or best variables.
+    * For this we will build a regressor model and analyse the best variables to use.
