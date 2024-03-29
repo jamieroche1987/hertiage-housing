@@ -196,7 +196,7 @@ Although your friend has an excellent understanding of property prices in her ow
 
 * Epic 1: Information Gathering & Data Collection - *closed*
 * Epic 2: Data Visualisation, Cleaning, & Preparation - *closed*
-* Epic 3: Model Training, Optimisation, & Validation - *closed
+* Epic 3: Model Training, Optimisation, & Validation - *closed*
 * Epic 4: Dashboard Planning, Designing, & Development - *closed*
 * Epic 5: Dashboard Deployment & Release - *closed*
 * User Stories - *closed*
@@ -333,4 +333,13 @@ This section contains information on resources and technologies used to complete
 
 - To create the dataset table I used the following website:
     * [st.data_editor](https://docs.streamlit.io/library/api-reference/data/st.data_editor)
+
+    ## Acknowledgements
+
+
+- The Slack community has, as always, been invaluable in answering questions.
+
+- StackOverflow helped resolve several issues through out the project.
+
+- As always a big thank you to my wife Runa for her continued, unwavering support!
 
