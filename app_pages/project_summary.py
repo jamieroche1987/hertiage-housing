@@ -35,6 +35,7 @@ def page_project_summary():
         f"[Kaggle](https://www.kaggle.com/datasets/codeinstitute/housing-prices-data)")
 
     # checkbox to view dataset
+
     if st.checkbox("View Dataset"):
         st.write(f"**Expand to view whole dataset.**")
         df = pd.DataFrame(
@@ -138,6 +139,7 @@ def page_project_summary():
         df = st.data_editor(df, hide_index=True, use_container_width=True)
 
     # link to readme
+
     st.write(
         f"For any additional information, please visit and\n"
         f"**read**:\n"
@@ -145,6 +147,7 @@ def page_project_summary():
     )
 
     # business requirements taken from readme
+    
     st.success(
         f"The project contains ** 2 Business Requirements**:\n"
         f"* 1 - The client is interested in discovering how the house attributes\n"

@@ -14,4 +14,4 @@ def page_homepage():
         f"* Propery Sale Price Study\n\n"
         f"* Sales Predictor\n\n"
         f"* ML Model\n\n"
-        f"Use the sidebar to navivate to the different pages.")
+        f"Use the sidebar to navigate to the different pages.")

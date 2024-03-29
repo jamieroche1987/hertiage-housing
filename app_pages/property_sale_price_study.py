@@ -12,9 +12,11 @@ def page_sale_price_study():
     st.write("#### 🏡 Property Sale Price Study")
 
      #load the data
+
     df = load_property_data()
 
     # copies from sales price study notebook
+
     vars_to_study = ['OverallQual','TotalBsmtSF','1stFlrSF',
                     'YearBuilt', 'GarageArea','GrLivArea']
 
@@ -47,12 +49,14 @@ def page_sale_price_study():
         )
 
     # code copied from sales price study notebook
+
     df_eda = df.filter(vars_to_study + ['SalePrice'])
 
     if st.checkbox("Sale Price Study Visulations"):
         sale_price_per_var(df_eda, vars_to_study)
 
         # copied from sale price study notebook
+
         st.write(
             f"Findings:\n"
             f"* The correlation analysis suggests that the the ground floor living area\n"
@@ -65,18 +69,24 @@ def page_sale_price_study():
         )
 
 # cache decoder
+
 @st.cache_data
 def sale_price_per_var(df_eda, vars_to_study):
+
     # function based on sale price study notebook
+
     target_var = 'SalePrice'
     for col in vars_to_study:
         plot_numerical(df_eda, col, target_var)
         st.write("\n\n")
 
 # cache decoder
+
 @st.cache_data
 def plot_numerical(df, col, target_var):
+
     # function based on sale price study notebook
+    
     fig, axes = plt.subplots(figsize=(15, 8))
     sns.regplot(data=df, x=col, y=target_var)
     plt.title(f"{col}", fontsize=20)

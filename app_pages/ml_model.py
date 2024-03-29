@@ -41,9 +41,12 @@ def page_ml_model():
         f"**The *R2* target has been reached.**"
     )
     # show pipeline steps, had to write manually as it would not load otherwise
+
     st.write("---")
     st.write("#### ML Pipeline Steps:")
+
     # st.write(pipeline)
+
     st.success(
         f"Pipeline(steps=[('NumericLogTransform',\n"
         f"LogTransformer(variables=['1stFlrSF', 'GrLivArea'])),\n"
@@ -55,12 +58,14 @@ def page_ml_model():
     st.write("---")
 
     # show best features
+
     st.write("#### Best Features:")
     st.write(X_train.columns.to_list())
     st.image(feature_importance)
     st.write("---")
 
     # evaluate performance on train and test sets
+    
     regression_performance(X_train=X_train, y_train=y_train,
                            x_test=x_test, y_test=y_test, pipeline=pipeline)
 

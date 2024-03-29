@@ -11,6 +11,7 @@ def page_sales_predictor():
     st.write("#### 💰 Sales Predictor")
 
     # load the price predictor files
+
     version = "v1"
     sale_price_prediction = load_pkl_file(
         f"outputs/ml_pipeline/sale_price_prediction/{version}/regression_pipeline.pkl"
@@ -22,9 +23,10 @@ def page_sales_predictor():
     )
 
     # load inherited property data 
+
     df = load_inherited_data()
 
-    st.write("### Property Price Predictor")
+    st.write("### Heritage Housing")
     st.success(
         f"*Business Requirement 2:*\n"
         f"* 2 - The client is interested in predicting the house sale price\n"
@@ -61,6 +63,7 @@ def page_sales_predictor():
         st.write(df.head())
 
         # total sum of properties
+
         sum = df['Predicted Property Price'].sum()
         st.write(
             f"* The total predicted price of all four\n"
@@ -79,9 +82,11 @@ def page_sales_predictor():
     f"**This requirement has been met.**"
     )
     # generate the live data
+
     X_live = DrawInputsWidgets()
 
     # run prediction on properties
+
     if st.button("Run Prediction"):
         price_prediction = sale_price_prediction.predict(
             X_live.filter(sale_price_vars)).round(0)
@@ -94,14 +99,17 @@ def page_sales_predictor():
 def DrawInputsWidgets():
 
     # load dataset
+
     df = load_property_data()
     percentageMin, percentageMax = 0.4, 2.0
 
     # we create input widgets only for 6 features	
+
     col1, col2, col3, col4 = st.columns(4)
     col5, col6, col7, col8 = st.columns(4)
 
 	# create an empty DataFrame, which will be the live data
+    
     X_live = pd.DataFrame([], index=[0])
 	
 	# from here on we draw the widget based on the variable type (numerical or categorical)
